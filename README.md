@@ -226,3 +226,4 @@ spring.batch.job.name=${job.name:NONE}
 - 참고1: [스프링 배치 5 Youtube 강좌](https://www.youtube.com/watch?v=MNzPsOQ3NJk&list=PLJkjrxxiBSFCaxkvfuZaK5FzqQWJwmTfR&index=1)
 - 참고2: [스프링 배치 5 블로그](https://www.devyummi.com/page?id=66951d4d823bbb8bc327ba0e)
 - 참고3: [ChainedTransactionManager 데이터소스 트랜잭션 연결하기](https://taes-k.github.io/2020/06/09/chained-transaction-manager/)
+- 참고4: [JobParameter 받기](https://jojoldu.tistory.com/490)
