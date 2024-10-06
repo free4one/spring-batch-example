@@ -24,7 +24,7 @@ public class DataDBConfig {
 
     @Bean
     @ConfigurationProperties(prefix = "spring.datasource.data")
-    public DataSource dataSource() {
+    public DataSource dataDBSource() {
         return DataSourceBuilder.create().build();
     }
 
@@ -32,7 +32,7 @@ public class DataDBConfig {
     public LocalContainerEntityManagerFactoryBean dataEntityManager() {
         LocalContainerEntityManagerFactoryBean em = new LocalContainerEntityManagerFactoryBean();
 
-        em.setDataSource(dataSource());
+        em.setDataSource(dataDBSource());
         em.setPackagesToScan(new String[] {"com.example.spring_multple_datasource_batch.entity"});
         em.setJpaVendorAdapter(new HibernateJpaVendorAdapter());
 
