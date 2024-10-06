@@ -38,4 +38,15 @@ public class MainController {
 
         return new ResponseEntity(HttpStatus.OK);
     }
+
+    @GetMapping("/sixth")
+    public ResponseEntity<String> sixthApi(@RequestParam("value") String value) throws Exception {
+        JobParameters jobParameters = new JobParametersBuilder()
+                .addString("date", value)
+                .toJobParameters();
+
+        jobLauncher.run(jobRegistry.getJob("sixthJob"), jobParameters);
+
+        return new ResponseEntity(HttpStatus.OK);
+    }
 }
