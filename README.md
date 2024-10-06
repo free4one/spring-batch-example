@@ -214,4 +214,6 @@ INSERT INTO WinEntity (id, reward, username, win) VALUES
   (99, FALSE, 'user99', 3),
   (100, FALSE, 'batchhh100', 8);
 ```
-참고: https://www.youtube.com/watch?v=MNzPsOQ3NJk&list=PLJkjrxxiBSFCaxkvfuZaK5FzqQWJwmTfR&index=1
+참고: [스프링 배치 5 Youtube 강좌](https://www.youtube.com/watch?v=MNzPsOQ3NJk&list=PLJkjrxxiBSFCaxkvfuZaK5FzqQWJwmTfR&index=1)
+
+참고: [ChainedTransactionManager 데이터소스 트랜잭션 연결하기](https://taes-k.github.io/2020/06/09/chained-transaction-manager/)
