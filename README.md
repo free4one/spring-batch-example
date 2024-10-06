@@ -214,6 +214,15 @@ INSERT INTO WinEntity (id, reward, username, win) VALUES
   (99, FALSE, 'user99', 3),
   (100, FALSE, 'batchhh100', 8);
 ```
-참고: [스프링 배치 5 Youtube 강좌](https://www.youtube.com/watch?v=MNzPsOQ3NJk&list=PLJkjrxxiBSFCaxkvfuZaK5FzqQWJwmTfR&index=1)
-참고: [스프링 배치 5 블로그](https://www.devyummi.com/page?id=66951d4d823bbb8bc327ba0e)
-참고: [ChainedTransactionManager 데이터소스 트랜잭션 연결하기](https://taes-k.github.io/2020/06/09/chained-transaction-manager/)
+### Job 이름 설정
+```properties
+spring.batch.job.name=${job.name:NONE}
+
+```
+
+```-Djob.name={job_name}```
+
+## 참고
+- 참고1: [스프링 배치 5 Youtube 강좌](https://www.youtube.com/watch?v=MNzPsOQ3NJk&list=PLJkjrxxiBSFCaxkvfuZaK5FzqQWJwmTfR&index=1)
+- 참고2: [스프링 배치 5 블로그](https://www.devyummi.com/page?id=66951d4d823bbb8bc327ba0e)
+- 참고3: [ChainedTransactionManager 데이터소스 트랜잭션 연결하기](https://taes-k.github.io/2020/06/09/chained-transaction-manager/)
